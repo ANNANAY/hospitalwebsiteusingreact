@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+        <title>Vaccination Form</title>
+        <link rel="stylesheet" type="text/css" href="vaccine.css">
+       <script>
+        function s(){
+        alert("You will be called after allocation");
+        }
+       </script> 
+       
+</head>
+    <body>
+<header id="body-header">
+            <h1 id="heading">Vaccination Registration Form</h1>
+        </header>
+        <main>
+            <div class="form">
+            <form class="form-content">
+            <div>
+                <h1>1.Name</h1>
+                <input id="name" name="username" type="text" placeholder="(Name)">
+            </div>
+            <div>
+                <h1>2. Age</h1>
+                <input id="age"  name="age" type="number" min="18"  placeholder="(Age)">
+            </div>
+            <div>
+                <h1>3. Phone Number</h1>
+                <input id="phone" name="phnum" type="number" placeholder="(Phone Number)">
+            </div>
+            <div>
+                <h1>4. Address</h1>
+                <input id="address" type="text" name="address" placeholder="(Address)">
+            </div>
+            <div>
+                <h1>5. ID Proof</h1>
+                <select id="id" name="id">
+                    <option selected hidden>-NONE-</option>
+                    <option value="aadhar" id="aadhar">Aadhar Card</option>
+                    <option value="dl" id="dl">Driving License</option>
+                    <option value="pan" id="pan">PAN Card</option>
+                    <option value="voter" id="voter">Voter Card</option>
+                </select>
+            </div>
+            <div>
+            <h1 id="no">6. ID Number</h1>
+                <input name="id_num" id="idNum" type="text"  placeholder="(ID Number as selected above)">
+            </div>
+            <div>
+                <h1>7. Upload ID</h1>
+                <input type="file" name="file" id="file">
+            </div>
+            <div>
+                <h1>8. Time-Slot</h1>
+                <Select name="time" id="time">
+                    <option selected hidden>Choose Time</option>
+                    <option value="10">10:00am-11:00am</option>
+                    <option value="11">11:00am-12:00pm</option>
+                    <option value="12">12:00pm-1:00pm</option>
+                    <option value="1">1:00pm-2:00pm</option>
+                    <option value="2">2:00pm-3:00pm</option>
+                </Select>
+            </div>
+            
+            <button type="submit" onclick="s()">Submit</button>
+            </form>
+            <P>NOTE: You will get a SMS on the number you entered above when your vaccination is scheduled.</P>
+            </div>
+        </main>
+         
+          </body>
+    
+</html>

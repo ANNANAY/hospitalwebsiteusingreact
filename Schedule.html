@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+        <title>Slot Selection</title>
+        <link rel="stylesheet" type="text/css" href="schedule.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap" rel="stylesheet">
+        <script type="text/javascript">
+        var text=localStorage.getItem("testJSON");
+        var obj=JSON.parse(text);
+        document.getElementById("nam").innerHTML="Name: "+obj.name;
+        document.getElementById("ag").innerHTML="Age: "+obj.age;
+        document.getElementById("phn").innerHTML="Phone: "+obj.phnum;
+        document.getElementById("add").innerHTML="Address: "+obj.address;
+        document.getElementById("ids").innerHTML="Id: "+obj.id;
+        document.getElementById("idn").innerHTML="Id Num: "+obj.idnum;
+        </script>
+    </head>
+        <body>
+            <div>
+                <h1>
+                    Details
+                </h1>
+                <ul>
+                    <li id="nam">
+                        
+                    </li>
+                    <li id="ag">
+
+                    </li>
+                    <li id="ph">
+
+                    </li>
+                    <li id="add">
+
+                    </li>
+                    <li id="ids">
+
+                    </li>
+                    <li id="idn">
+
+                    </li>
+                </ul>
+            </div>
+        </body>
+    </html>

@@ -1,0 +1,25 @@
+body{
+    margin:0px;
+    background-color:#f5ff7d;
+}
+div{
+    background-color:white;
+    margin-top:5rem;
+    margin-left:23rem;
+    margin-bottom:5rem;
+    align-content: center;
+    width: 45%;
+    min-height: 150px;
+    border-radius: 10px;
+    padding-top:25px;
+    padding-left: 50px;
+}
+ul{
+    list-style: none;
+
+}
+ul li{
+    font-size: 1rem;
+    font-family: 'Fira Sans';
+    font-weight: 600;
+}

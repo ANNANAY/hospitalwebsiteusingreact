@@ -1,0 +1,236 @@
+body{
+	margin:0px;
+}
+
+/*Body Header*/
+#header{
+	background-image: url(MainBkg.jpg);
+	background-size: cover;
+	background-position: center;
+	z-index:-2;
+	height: 700px;
+}
+#heading{
+    font-size: 3rem;
+    color:white;
+    font-family: Times New Roman;
+    font-weight: 800;
+    padding-top: 150px;
+    text-align: right;
+    margin-right:30px ;
+}
+#heading:hover{
+    text-decoration: underline;
+}
+#logo{
+    display: inline-block;
+    margin-right:400px;
+    height:150px;
+    width:150px;
+    margin-bottom: -50px;
+    }
+
+/*Horizontal-list*/
+.horizontal-list{
+	list-style: none;
+	padding-left: 40px;
+	margin:0px;
+	padding-top: 10px;
+    margin-top: -50px;
+	
+}
+/*horizontal list Li*/
+.horizontal-list li{
+	display: inline-block;
+	margin-top: 0px;
+	margin-bottom:0px;
+	padding-right: 20px;
+    padding-left:25px;
+    font-size: 1.5rem;
+    font-family: Fjalla One;
+}
+/*horizontal list li a*/
+.horizontal-list li a{
+	color:black;
+    
+  
+	text-decoration: none;
+
+}
+
+.nav-menu li a{
+    transition: color 0.5s, border-bottom 4s;
+}
+
+.nav-menu li a:hover{
+        
+	text-decoration: underline;
+}
+
+
+
+/*Section*/
+section{
+	width: 100%;
+	display:flex;
+	flex-direction:column;
+	
+}
+.section-heading{
+	width: auto;
+	padding:20px 10px 10px;
+	font-weight:400;
+	align-items: center;
+}
+section:nth-child(2n){
+	background:url( bkg.jpg);
+    color:white;
+    opacity:0.7;
+    background-position: cover;
+}
+section:nth-child(2n+1){
+	background-color: white;
+}
+p{
+	font-size: 1.5rem;
+	font-family: Times New Roman;
+	margin-top: 50px;
+	}
+/*Sub Headings*/
+.COVID{
+    font-size: 2.5rem;
+    text-align:center;
+
+}
+/*Symptoms*/
+.symptom {
+    position: relative;
+    width: 75%;
+    
+    margin-left: 200px;
+    }
+
+.symptom-box {
+    position: relative;
+    margin: 5px;
+    width: 40%;
+    left: 5%;
+    min-height: 150px;
+    border:2px solid black;
+    border-radius:5px;
+    font-family: blinker;
+    background-color: black;
+    COLOR:WHITE;
+    
+}
+.symptom-box p{
+    font-family: Times New Roman;
+    font-size:2.5 rem;
+    font-weight: bolder;
+    margin-left: 10px;
+    margin-top: -1px;
+    text-decoration: underline;
+}
+.symptom-box ul{
+    margin-top: -1px;
+    
+}
+.symptom-box ul li{
+    font-size: 1.5rem;
+    font-family: Times New Roman;
+    font-weight: 600;
+}
+
+
+.symptom-box:nth-child(2n) {
+    left: 53%;
+}
+
+
+
+/*prevention*/
+#prevention{
+    position: relative;
+    width: 75%;
+    
+    margin-left: 200px;    
+}
+.prevention-box{
+    background-color:white;
+    color:#0ca3f3;
+    position: relative;
+    margin: 5px;
+    width: 40%;
+    left: 5%;
+    min-height: 150px;
+    border-radius: 10px;
+}
+.timg{
+    height:140px;
+    width:300px;
+    align-content: right;
+    margin-left: 100px;
+    
+}
+
+.prevention-box:nth-child(2n) {
+    left: 53%;
+}
+
+.prevention-box:nth-child(2n+1)::after {
+    content: '';
+    position: absolute;
+    top: 30%;
+    right: -12.5%;
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: grey;
+    z-index: 1;
+
+}
+
+
+.prevention-box:nth-child(2n)::after {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: -9.35%;
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: grey;
+    z-index: 1;
+}
+.prevention-divider{
+    position: absolute;
+    height: 95%;
+    width: 0;
+    border: 3px dashed #0096fa6b;
+    top: 4%;
+    left: 50%;
+}
+.prevention-traveller{
+    position: sticky;
+    top: 30%;
+    transform: rotate(90deg);
+    z-index: 2;
+}
+/*Vaccination*/
+#btn1{
+    background-color:navy;
+    color:white;
+    font-size:1.5rem;
+    height: 5rem;
+    width:25rem;
+    margin-left:35rem;
+    border-radius: 10px;
+    font-weight: 600;
+    font-family: "Tahoma";
+
+}
+#btn1:hover{
+    background-color: orangered;
+    z-index:2;
+    color:black;
+}
